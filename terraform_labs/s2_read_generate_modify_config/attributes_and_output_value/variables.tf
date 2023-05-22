@@ -1,7 +1,7 @@
 variable "access_key_value" {
-    type = string
+  type = string
 }
 
 variable "secret_key_value" {
-    type = string
+  type = string
 }
