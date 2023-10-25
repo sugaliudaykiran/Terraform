@@ -1,0 +1,18 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: EC2 Creation
+Resources:
+  EC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0fc5d935ebf8bc3bc
+      InstanceType: t2.micro
+      KeyName: aws-devops
+      SecurityGroupIds:
+        - sg-0b7cad522da7c8036
+      SubnetId: subnet-0fa23e85535684b84
+      Tags:
+        - Key: Name
+          Value: EC2-Creation
+
+      
